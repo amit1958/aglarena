@@ -45,7 +45,8 @@ public class origin {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			//driver.manage().window().maximize();
 			driver.manage().window().fullscreen();
-			driver.get(pr.getProperty("mstalive"));
+			driver.get(pr.getProperty("url"));
+			//driver.get(pr.getProperty("mstalive"));
 			System.out.println("url is " +pr.getProperty("url"));
 			Thread.sleep(10000);
 			

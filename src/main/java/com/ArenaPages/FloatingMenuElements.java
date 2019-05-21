@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.AglArena.Asserts;
+import com.AglArena.AmitAssertion;
 import com.AglArena.origin;
 
 public class FloatingMenuElements extends origin{

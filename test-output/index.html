@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\AGL\AppData\Local\Temp\testng-eclipse-428898827\testng-customsuite.xml</span>
+                    <span>C:\Users\AGL\AppData\Local\Temp\testng-eclipse--530402396\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -128,25 +128,16 @@
                   <a name="MSTATest">
                   </a> <!-- MSTATest -->
                   <span class="method-name">MSTATest</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to write response to stream
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-9VF53AB&apos;, ip: &apos;192.168.43.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14424, moz:profile: C:\Users\AGL\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad50126e-1644-48c4-ac3e-84e819b4bca6
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:280)
-	at com.ArenaPages.MSTAElements.MSTAElementsTest(MSTAElements.java:22)
+                  <div class="stack-trace">java.lang.AssertionError: expected [Your request has been successfully sent.Please sit back &amp; relax while our customer experts get back to you!] but found [Your request has been successfully sent.
+Please sit back &amp; relax while our customer experts get back to you!]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.AglArena.AmitAssertion.MSTAAssert(AmitAssertion.java:29)
+	at com.ArenaPages.MSTAElements.MSTAElementsTest(MSTAElements.java:123)
 	at com.AglArena.MSTAFormTest.MSTATest(MSTAFormTest.java:15)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -182,7 +173,7 @@ Session ID: ad50126e-1644-48c4-ac3e-84e819b4bca6
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\AGL\AppData\Local\Temp\testng-eclipse-428898827\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\AGL\AppData\Local\Temp\testng-eclipse--530402396\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -235,12 +226,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'MSTATest')
 data.setCell(0, 2, 'com.AglArena.MSTAFormTest')
-data.setCell(0, 3, 28031609);
+data.setCell(0, 3, 66400);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 hours</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -275,11 +266,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">MSTATest</span>
-                <span class="method-start">13873 ms</span>
+                <span class="method-start">26449 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenShot([TestResult name=MSTATest status=FAILURE method=MSTAFormTest.MSTATest()[pri:0, instance:com.AglArena...)</span>
-                <span class="method-start">28049892 ms</span>
+                <span class="method-start">92855 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

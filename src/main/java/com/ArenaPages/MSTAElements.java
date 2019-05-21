@@ -1,25 +1,24 @@
 package com.ArenaPages;
 
-import java.awt.AWTException;
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.AglArena.Asserts;
+import com.AglArena.AmitAssertion;
 import com.AglArena.origin;
 
 public class MSTAElements extends origin{
 	
-	public void MSTAElementsTest() throws InterruptedException, AWTException{
+	public void MSTAElementsTest() throws InterruptedException{
 		//Apply Now Button
 		String title= driver.getTitle();
+		driver.navigate().to("mstalive");
+		Thread.sleep(8000);
 		//driver.findElement(By.xpath("//span[@class='icon-floating-menu']")).click();
 		/*WebElement cookiediv= driver.findElement(By.xpath("//*[@id='closeCookieConsent']/span"));
 		if(cookiediv.isDisplayed()){
@@ -123,7 +122,7 @@ public class MSTAElements extends origin{
 
 		driver.findElement(By.xpath("/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[2]/div[1]/form[1]/div[14]/input[1]")).click();
 		Thread.sleep(6000);
-		Asserts.MSTAAssert();
+		AmitAssertion.MSTAAssert();
 		
             
 	

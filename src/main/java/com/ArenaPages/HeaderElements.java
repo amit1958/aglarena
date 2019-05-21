@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.AglArena.Asserts;
+import com.AglArena.AmitAssertion;
 import com.AglArena.origin;
 
 public class HeaderElements extends origin{
@@ -45,7 +45,7 @@ public class HeaderElements extends origin{
 		driver.findElement(By.xpath("//*[@id='phone']")).sendKeys("9800000000");
 		driver.findElement(By.xpath("//*[@id='lnkOTP']")).click();
 		Thread.sleep(8000);
-		Asserts.loginAssert();
+		AmitAssertion.loginAssert();
 		
             
 	

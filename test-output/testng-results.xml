@@ -2,45 +2,32 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28059712" started-at="2019-05-08T23:52:43Z" finished-at="2019-05-09T07:40:22Z">
+  <suite name="Default suite" duration-ms="93452" started-at="2019-05-21T07:56:17Z" finished-at="2019-05-21T07:57:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28059712" started-at="2019-05-08T23:52:43Z" finished-at="2019-05-09T07:40:22Z">
+    <test name="Default test" duration-ms="93452" started-at="2019-05-21T07:56:17Z" finished-at="2019-05-21T07:57:50Z">
       <class name="com.AglArena.MSTAFormTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.AglArena.MSTAFormTest@20ce78ec]" name="startUp" is-config="true" duration-ms="13873" started-at="2019-05-08T23:52:43Z" finished-at="2019-05-08T23:52:57Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.AglArena.MSTAFormTest@5622fdf]" name="startUp" is-config="true" duration-ms="26449" started-at="2019-05-21T07:56:17Z" finished-at="2019-05-21T07:56:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="FAIL" signature="MSTATest()[pri:0, instance:com.AglArena.MSTAFormTest@20ce78ec]" name="MSTATest" duration-ms="28031609" started-at="2019-05-08T23:52:57Z" finished-at="2019-05-09T07:40:08Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="MSTATest()[pri:0, instance:com.AglArena.MSTAFormTest@5622fdf]" name="MSTATest" duration-ms="66400" started-at="2019-05-21T07:56:43Z" finished-at="2019-05-21T07:57:50Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Failed to write response to stream
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-9VF53AB', ip: '192.168.43.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14424, moz:profile: C:\Users\AGL\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad50126e-1644-48c4-ac3e-84e819b4bca6]]>
+              <![CDATA[expected [Your request has been successfully sent.Please sit back & relax while our customer experts get back to you!] but found [Your request has been successfully sent.
+Please sit back & relax while our customer experts get back to you!]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to write response to stream
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-9VF53AB', ip: '192.168.43.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14424, moz:profile: C:\Users\AGL\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad50126e-1644-48c4-ac3e-84e819b4bca6
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:280)
-at com.ArenaPages.MSTAElements.MSTAElementsTest(MSTAElements.java:22)
+              <![CDATA[java.lang.AssertionError: expected [Your request has been successfully sent.Please sit back & relax while our customer experts get back to you!] but found [Your request has been successfully sent.
+Please sit back & relax while our customer experts get back to you!]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.AglArena.AmitAssertion.MSTAAssert(AmitAssertion.java:29)
+at com.ArenaPages.MSTAElements.MSTAElementsTest(MSTAElements.java:123)
 at com.AglArena.MSTAFormTest.MSTATest(MSTAFormTest.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -69,15 +56,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MSTATest -->
-        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.AglArena.MSTAFormTest@20ce78ec]" name="screenShot" is-config="true" duration-ms="76" started-at="2019-05-09T07:40:13Z" finished-at="2019-05-09T07:40:13Z">
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.AglArena.MSTAFormTest@5622fdf]" name="screenShot" is-config="true" duration-ms="519" started-at="2019-05-21T07:57:50Z" finished-at="2019-05-21T07:57:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MSTATest status=FAILURE method=MSTAFormTest.MSTATest()[pri:0, instance:com.AglArena.MSTAFormTest@20ce78ec] output={null}]]]>
+                <![CDATA[[TestResult name=MSTATest status=FAILURE method=MSTAFormTest.MSTATest()[pri:0, instance:com.AglArena.MSTAFormTest@5622fdf] output={null}]]]>
               </value>
             </param>
           </params>
