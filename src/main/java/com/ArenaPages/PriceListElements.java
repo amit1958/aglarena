@@ -4,10 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-import com.AglArena.AmitAssertion;
-import com.AglArena.origin;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import com.AglArena.*;
 
 public class PriceListElements extends origin{
 	
@@ -38,7 +42,22 @@ public class PriceListElements extends origin{
 		mousemove.moveToElement(calculateEMI).perform();
 		
 		try {
-			AmitAssertion.AltoPriceAssertMetallic();
+			String expecteda= "?2,93,689.00";
+			WebDriverWait price= new WebDriverWait(driver, 10);
+			WebElement actual = driver.findElement(By.xpath("//section[@class='price-list-check']//li[2]//div[2]//p[1]"));
+			price.until(ExpectedConditions.visibilityOf(actual));
+			String actual1= actual.getText().trim();
+//			StringBuilder build = new StringBuilder(actual1);
+//			System.out.println("Pre Builder : " + build);
+//			build.deleteCharAt(0); // Shift the positions front.
+//		    build.deleteCharAt(1);
+//		    build.deleteCharAt(3);
+//		    build.deleteCharAt(6);
+//		    build.deleteCharAt(6);
+//		    build.deleteCharAt(6);
+//			System.out.println("Post Builder : " + build);
+			//String expected1=actual1.toString();
+			Assert.assertEquals(actual1, expecteda);
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Failed if no match found");

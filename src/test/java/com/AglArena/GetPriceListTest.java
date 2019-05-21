@@ -8,7 +8,7 @@ public class GetPriceListTest extends origin
 	PriceListElements price= new PriceListElements();
  
     @Test(invocationCount = 1)
-    public void AltoPriceTest() throws InterruptedException, Exception
+    public void AltoPriceTest() throws InterruptedException
     {
       price.AltoPriceList();
     }

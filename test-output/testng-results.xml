@@ -2,33 +2,30 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="93452" started-at="2019-05-21T07:56:17Z" finished-at="2019-05-21T07:57:50Z">
+  <suite name="Default suite" duration-ms="82218" started-at="2019-05-21T08:56:09Z" finished-at="2019-05-21T08:57:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="93452" started-at="2019-05-21T07:56:17Z" finished-at="2019-05-21T07:57:50Z">
-      <class name="com.AglArena.MSTAFormTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.AglArena.MSTAFormTest@5622fdf]" name="startUp" is-config="true" duration-ms="26449" started-at="2019-05-21T07:56:17Z" finished-at="2019-05-21T07:56:43Z">
+    <test name="Default test" duration-ms="82218" started-at="2019-05-21T08:56:09Z" finished-at="2019-05-21T08:57:31Z">
+      <class name="com.AglArena.GetPriceListTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.AglArena.GetPriceListTest@6093dd95]" name="startUp" is-config="true" duration-ms="64689" started-at="2019-05-21T08:56:09Z" finished-at="2019-05-21T08:57:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="FAIL" signature="MSTATest()[pri:0, instance:com.AglArena.MSTAFormTest@5622fdf]" name="MSTATest" duration-ms="66400" started-at="2019-05-21T07:56:43Z" finished-at="2019-05-21T07:57:50Z">
+        <test-method status="FAIL" signature="AltoPriceTest()[pri:0, instance:com.AglArena.GetPriceListTest@6093dd95]" name="AltoPriceTest" duration-ms="17275" started-at="2019-05-21T08:57:14Z" finished-at="2019-05-21T08:57:31Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Your request has been successfully sent.Please sit back & relax while our customer experts get back to you!] but found [Your request has been successfully sent.
-Please sit back & relax while our customer experts get back to you!]]]>
+              <![CDATA[expected [2,93,689.00] but found [2,93,689.00]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Your request has been successfully sent.Please sit back & relax while our customer experts get back to you!] but found [Your request has been successfully sent.
-Please sit back & relax while our customer experts get back to you!]
+              <![CDATA[java.lang.AssertionError: expected [2,93,689.00] but found [2,93,689.00]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.AglArena.AmitAssertion.MSTAAssert(AmitAssertion.java:29)
-at com.ArenaPages.MSTAElements.MSTAElementsTest(MSTAElements.java:123)
-at com.AglArena.MSTAFormTest.MSTATest(MSTAFormTest.java:15)
+at org.testng.Assert.assertEquals(Assert.java:442)
+at com.AglArena.AmitAssertion.AltoPriceAssertMetallic(AmitAssertion.java:49)
+at com.ArenaPages.PriceListElements.AltoPriceList(PriceListElements.java:41)
+at com.AglArena.GetPriceListTest.AltoPriceTest(GetPriceListTest.java:13)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -59,19 +56,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MSTATest -->
-        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.AglArena.MSTAFormTest@5622fdf]" name="screenShot" is-config="true" duration-ms="519" started-at="2019-05-21T07:57:50Z" finished-at="2019-05-21T07:57:50Z">
+        </test-method> <!-- AltoPriceTest -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.AglArena.GetPriceListTest@6093dd95]" name="screenShot" is-config="true" duration-ms="194" started-at="2019-05-21T08:57:31Z" finished-at="2019-05-21T08:57:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MSTATest status=FAILURE method=MSTAFormTest.MSTATest()[pri:0, instance:com.AglArena.MSTAFormTest@5622fdf] output={null}]]]>
+                <![CDATA[[TestResult name=AltoPriceTest status=FAILURE method=GetPriceListTest.AltoPriceTest()[pri:0, instance:com.AglArena.GetPriceListTest@6093dd95] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-      </class> <!-- com.AglArena.MSTAFormTest -->
+      </class> <!-- com.AglArena.GetPriceListTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
