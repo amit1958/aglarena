@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 
 import com.ArenaPages.PriceListElements;
 
-public class GetPriceListTest extends origin
+public class GetPriceListTestforAllCars extends origin
 {
 	PriceListElements price= new PriceListElements();
  
