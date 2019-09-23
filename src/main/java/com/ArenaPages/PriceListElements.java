@@ -8,7 +8,7 @@ import com.AglArena.origin;
 
 public class PriceListElements extends origin{
 	
-	public void AltoPriceList() throws InterruptedException{
+	public void AllCarsPriceTest() throws InterruptedException{
 		//Apply Now Button
 		String title= driver.getTitle();
 		System.out.println("Title of the page" + title);
@@ -17,19 +17,19 @@ public class PriceListElements extends origin{
 		String pricelistpage= "https://www.marutisuzuki.com/channels/arena/price-list";
 		//driver.navigate().to(pricelistpage);
 		
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		//Select Car/state/city
 		//Select car= new Select(driver.findElement(By.xpath("//div[@class='modal-body']//select[@id='model']")));
 		
-		String[] Cars = {"ALTO","ALTO K10","CELERIO","CELERIO X","DZIRE","EECO","ERTIGA","GYPSY","OMNI","SWIFT","VITARA BREZZA","WAGONR"};
+		String[] Cars = {"ALTO","ALTO K10","CELERIO","CELERIO X","DZIRE","EECO","ERTIGA",/*"GYPSY","OMNI"*/"SWIFT","VITARA BREZZA","WAGONR"};
 		for(int i = 0; i< Cars.length; i++){
 			driver.navigate().to(pricelistpage);
-			Thread.sleep(8000);
+			Thread.sleep(2000);
 			Select car= new Select(driver.findElement(By.xpath("//select[@id='modelpricelist']")));
 
 			System.out.println(Cars[i]);
-
+			
 			
 		car.selectByVisibleText(Cars[i]);
 		
@@ -100,7 +100,8 @@ public class PriceListElements extends origin{
 		
 		case "dzire" :
 		     
-    		String expecteddzire="₹5,69,923.00";
+    		//String expecteddzire="₹5,69,923.00";
+			String expecteddzire="₹5,82,613.00";
 			String actualdzire = driver.findElement(By.xpath("//section[@class='price-list-check']//li[2]//div[2]//p[1]")).getText().trim();
 			System.out.println("====acutal=== " + actualdzire);
 			Assert.assertEquals(actualdzire, expecteddzire);
@@ -117,7 +118,8 @@ public class PriceListElements extends origin{
 			break;
 		case "ertiga" :
 		     
-    		String expectedertiga="₹7,44,689.00";
+    		//String expectedertiga="₹7,44,689.00";
+			String expectedertiga="₹7,54,689.00";
 			String actualertiga = driver.findElement(By.xpath("//section[@class='price-list-check']//li[2]//div[2]//p[1]")).getText().trim();
 			System.out.println("====acutal=== " + actualertiga);
 			Assert.assertEquals(actualertiga, expectedertiga);
@@ -126,7 +128,8 @@ public class PriceListElements extends origin{
 			
 		case "swift" :
 		     
-    		String expectedswift="₹4,99,000.00";
+    		//String expectedswift="₹4,99,000.00";
+    		String expectedswift="₹5,14,000.00";
 			String actualswift = driver.findElement(By.xpath("//section[@class='price-list-check']//li[2]//div[2]//p[1]")).getText().trim();
 			System.out.println("====acutal=== " + actualswift);
 			Assert.assertEquals(actualswift, expectedswift);
@@ -141,15 +144,15 @@ public class PriceListElements extends origin{
 			System.out.println("TestCase passed");
 			break;
 		case "wagonr" :
-		     
-    		String expectedwagonr="₹4,19,613.00";
+			//String expectedwagonr="₹4,19,613.00";
+    		String expectedwagonr="₹4,34,000.00";
 			String actualwagonr = driver.findElement(By.xpath("//section[@class='price-list-check']//li[2]//div[2]//p[1]")).getText().trim();
 			System.out.println("====acutal=== " + actualwagonr);
 			Assert.assertEquals(actualwagonr, expectedwagonr);
 			System.out.println("TestCase passed");
 			break;
 			
-		case "gypsy" :
+	/*	case "gypsy" :
 		     
     		String expectedgypsy="₹6,26,091.00";
 			String actualgypsy = driver.findElement(By.xpath("//section[@class='price-list-check']//li[2]//div[2]//p[1]")).getText().trim();
@@ -165,7 +168,7 @@ public class PriceListElements extends origin{
 			Assert.assertEquals(actualomni, expectedomni);
 			System.out.println("TestCase passed");
 			break;
-       
+       */
 		}	
        
      }

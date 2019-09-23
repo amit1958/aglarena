@@ -6,8 +6,9 @@
       <class name="com.AglArena.GetPriceListTestforAllCars">
         <methods>
           <include name="screenShot"/>
-          <include name="AltoPriceTest"/>
+          <include name="email"/>
           <include name="startUp"/>
+          <include name="AllCarsPriceTest"/>
         </methods>
       </class> <!-- com.AglArena.GetPriceListTestforAllCars -->
     </classes>

@@ -17,8 +17,8 @@ public class MSTAElements extends origin{
 	public void MSTAElementsTest() throws InterruptedException{
 		//Apply Now Button
 		String title= driver.getTitle();
-		driver.navigate().to("mstalive");
-		Thread.sleep(8000);
+		driver.navigate().to(pr.getProperty("mstalive"));
+		Thread.sleep(4000);
 		//driver.findElement(By.xpath("//span[@class='icon-floating-menu']")).click();
 		/*WebElement cookiediv= driver.findElement(By.xpath("//*[@id='closeCookieConsent']/span"));
 		if(cookiediv.isDisplayed()){

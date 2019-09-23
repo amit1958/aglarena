@@ -28,10 +28,10 @@ public class SendEmail {
 		
 		public  void sendAnEmailwithAttachement(String bodyText, String subjectText) throws EmailException{
 			EmailAttachment emailAt= new EmailAttachment();
-			emailAt.setPath("C:/Users/AGL/git/hyperlocal/hyperlocal/test-output/emailable-report.html");
+			emailAt.setPath("C:/Users/AGL/AmitSharma/workspace/AglArena/test-output/emailable-report.html");
 			emailAt.setDisposition(EmailAttachment.ATTACHMENT);
 			emailAt.setDescription("My Attachement");
-			emailAt.setName("Testsuite Status");
+			emailAt.setName("Price List- For All Cars");
 			
 			MultiPartEmail email= new MultiPartEmail();
 			email.setHostName("smtp.gmail.com");
@@ -44,7 +44,7 @@ public class SendEmail {
 			//email.setMsg("Body of the email");
 			email.setMsg(bodyText);
 			email.addTo("amit.kumar1@adglobal360.com");
-//			email.addTo("vishnu.dass@adglobal360.com");
+			email.addTo("vishnu.dass@adglobal360.com");
 //			email.addCc("parkash.gupta@adglobal360.com");
 //			email.addBcc("amit.sharma.eng14805@gmail.com");
 			email.attach(emailAt);
