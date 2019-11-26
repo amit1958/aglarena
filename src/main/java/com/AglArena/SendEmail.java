@@ -44,7 +44,7 @@ public class SendEmail {
 			//email.setMsg("Body of the email");
 			email.setMsg(bodyText);
 			email.addTo("amit.kumar1@adglobal360.com");
-			email.addTo("vishnu.dass@adglobal360.com");
+//			email.addTo("vishnu.dass@adglobal360.com");
 //			email.addCc("parkash.gupta@adglobal360.com");
 //			email.addBcc("amit.sharma.eng14805@gmail.com");
 			email.attach(emailAt);
