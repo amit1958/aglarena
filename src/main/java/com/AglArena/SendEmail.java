@@ -31,6 +31,7 @@ public class SendEmail {
 			
 			EmailAttachment emailAt= new EmailAttachment();
 			//emailAt.setPath("C:/Users/AGL/AmitSharma/workspace/AglArena/test-output/emailable-report.html");
+			//Dynamic path called
 			emailAt.setPath(filePath);
 			//emailAt.setPath("D:\\Selenium\\Screenshots\\Press_Release_Page.jpg");
 			
