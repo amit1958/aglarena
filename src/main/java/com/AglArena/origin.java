@@ -97,7 +97,7 @@ public class origin {
 //	@AfterSuite
 	public void email(String methodName, String filepath) throws EmailException{
 		try {
-			String subject= "Testing - " + " " + methodName;
+			String subject= "Automation Testing - " + " " + methodName;
 			SendEmail myemail = new SendEmail();
 			myemail.sendAnEmailwithAttachement("Please find the Attached file for the executed Automation script. ", subject, filepath );
 		} catch (Exception e) {
