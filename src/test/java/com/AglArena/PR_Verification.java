@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class PR_Verification extends origin {
 
-		/*@Test
+	@Test
 		public void Media_Page() throws InterruptedException {
 			//Apply Now Button
 			String title= driver.getTitle();
@@ -13,7 +13,7 @@ public class PR_Verification extends origin {
 			driver.navigate().to(pr.getProperty("media"));
 			Thread.sleep(3000);
 		}
-*/		@Test
+	@Test
 		public void PR_Validation() throws InterruptedException {
 			//Apply Now Button
 			String title= driver.getTitle();
