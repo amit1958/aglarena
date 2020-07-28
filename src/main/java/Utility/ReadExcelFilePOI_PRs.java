@@ -27,9 +27,11 @@ public class ReadExcelFilePOI_PRs extends origin {
 	HSSFSheet mysheet;
 	
 @Test
-	public void readExcel(){
+	public void readExcel() throws InterruptedException{
 		try{
-		String path= "D:/Selenium/PRResponsive.xls";
+		//String path= "D:/Selenium/PRResponsive.xls";
+		String path= "D:/Selenium/PRResponsive 2018-2019.xls";
+		//String stagingPath= "D:/Selenium/PRResponsiveStaging.xls";
 		File myfile= new File(path);
 		System.out.println("my file is " +myfile);
 		FileInputStream myinputfile= new FileInputStream(myfile);
@@ -58,18 +60,19 @@ public class ReadExcelFilePOI_PRs extends origin {
 	            //System.out.print(rowa.getCell(j).getStringCellValue()+"\n ");
 	        	//Take the Complete page screen shot.
 	        	  driver.get(rowa.getCell(j).getStringCellValue());
+	        	  Thread.sleep(2000);
 	        	  String title= driver.getTitle();
 	        	  
-	        	 try {
+	        	/* try {
 	        		 WebElement nonresponive=driver.findElement(By.xpath("//div/section/table"));
 	     			Assert.assertEquals(nonresponive, nonresponive);
 	     		} catch (Exception e) {
 	     			System.out.println("PR is not Responsive");
-	     		}
+	     		}*/
 	        	  
 	        	  try {
 	        		  Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-		        	  ImageIO.write(screenshot.getImage(), "jpg", new File("D:/Selenium/Screenshots/" + title +"" + ".png"));
+		        	  ImageIO.write(screenshot.getImage(), "jpg", new File("D:/Selenium/Screenshots/" + title + "_stg" + ".png"));
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

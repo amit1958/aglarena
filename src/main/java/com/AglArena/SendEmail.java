@@ -13,7 +13,7 @@ public class SendEmail {
 		Email email= new SimpleEmail();
 		email.setHostName("smtp.gmail.com");
 		email.setSmtpPort(465);
-		email.setAuthenticator(new DefaultAuthenticator("amit.sharma.eng14805@gmail.com", "Amit@1985"));
+		email.setAuthenticator(new DefaultAuthenticator("amit.sharma.eng14805@gmail.com", "Amit@3872"));
 		email.setSSL(true);
 		email.setFrom("amit.kumar1@adglobal360.com");
 		//email.setSubject("Selenium Testing");
@@ -26,17 +26,23 @@ public class SendEmail {
 		System.out.println("=============Email Sent============");
 	}
 		
-		public  void sendAnEmailwithAttachement(String bodyText, String subjectText) throws EmailException{
+		public  void sendAnEmailwithAttachement(String bodyText, String subjectText, String filePath) throws EmailException{
+			
+			
 			EmailAttachment emailAt= new EmailAttachment();
-			emailAt.setPath("C:/Users/AGL/AmitSharma/workspace/AglArena/test-output/emailable-report.html");
+			//emailAt.setPath("C:/Users/AGL/AmitSharma/workspace/AglArena/test-output/emailable-report.html");
+			emailAt.setPath(filePath);
+			//emailAt.setPath("D:\\Selenium\\Screenshots\\Press_Release_Page.jpg");
+			
 			emailAt.setDisposition(EmailAttachment.ATTACHMENT);
 			emailAt.setDescription("My Attachement");
-			emailAt.setName("Price List- For All Cars");
+			emailAt.setName("Automation");
+			
 			
 			MultiPartEmail email= new MultiPartEmail();
 			email.setHostName("smtp.gmail.com");
 			email.setSmtpPort(465);
-			email.setAuthenticator(new DefaultAuthenticator("amit.sharma.eng14805@gmail.com", "Amit@1985"));
+			email.setAuthenticator(new DefaultAuthenticator("amit.kumar1@adglobal360.com", "Agl@1395"));
 			email.setSSL(true);
 			email.setFrom("amit.kumar1@adglobal360.com");
 			//email.setSubject("Selenium Testing");
@@ -44,7 +50,8 @@ public class SendEmail {
 			//email.setMsg("Body of the email");
 			email.setMsg(bodyText);
 			email.addTo("amit.kumar1@adglobal360.com");
-//			email.addTo("vishnu.dass@adglobal360.com");
+			email.addTo("vishnu.dass@adglobal360.com");
+			email.addTo("megha.sharma@adglobal360.com");
 //			email.addCc("parkash.gupta@adglobal360.com");
 //			email.addBcc("amit.sharma.eng14805@gmail.com");
 			email.attach(emailAt);
