@@ -10,6 +10,7 @@ import javax.imageio.ImageIO;
 
 import org.apache.commons.mail.EmailException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -41,14 +42,14 @@ public class origin {
 			FileInputStream myInput= new FileInputStream(myfile);
 			pr.load(myInput);
 //			System.setProperty("webdriver.gecko.driver", pr.getProperty("ffdriverpath"));
-			System.setProperty("webdriver.gecko.driver", pr.getProperty("ffdriverpathupdated"));
-			//System.setProperty("webdriver.chrome.driver", pr.getProperty("chromedriver"));
+		System.setProperty("webdriver.gecko.driver", pr.getProperty("ffdriverpathupdated"));
+		//	System.setProperty("webdriver.chrome.driver", pr.getProperty("chromedriver"));
 			System.out.println("before calling the url");
 			driver= new FirefoxDriver();
 			//driver= new ChromeDriver();
 			System.out.println("After calling the ffdriver");
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			driver.manage().deleteAllCookies();
+			//driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			//Responsive page
 //			org.openqa.selenium.Dimension d=  new org.openqa.selenium.Dimension(414,736);
@@ -56,7 +57,7 @@ public class origin {
 			//driver.get(pr.getProperty("stagingurl"));
 			driver.get(pr.getProperty("url"));
 			//System.out.println("url is " +pr.getProperty("qaurl"));
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 			
 		}catch(Exception e){
 			e.printStackTrace();
@@ -64,6 +65,7 @@ public class origin {
 		
 		
 	}
+/*
 	@AfterMethod
 	public void screenShot(ITestResult result) throws EmailException, IOException{
 		String location= "D:\\Selenium\\Screenshots\\";
@@ -75,9 +77,9 @@ public class origin {
 //		myscreen.takesScreenshot();
 		String filepath = null;
 	try {
-		Screenshot Screenshots  = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(2000)).takeScreenshot(driver); 
-		ImageIO.write(Screenshots.getImage(), "jpg", new File(location  + methodname /*+  "_" + System.currentTimeMillis()*/ + ".jpg"));
-		filepath = location  + methodname /*+  "_" + System.currentTimeMillis()*/ + ".jpg";
+		Screenshot Screenshots  = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(700)).takeScreenshot(driver); 
+		ImageIO.write(Screenshots.getImage(), "jpg", new File(location  + methodname +  "_" + System.currentTimeMillis() + ".jpg"));
+		filepath = location  + methodname +  "_" + System.currentTimeMillis() + ".jpg";
 		//File myattachement=new File(location  + methodname + "_" + System.currentTimeMillis() + ".png");
 //		String screenpath=myattachement.getPath();
 //		System.out.println("=========Path ===========" +screenpath);
@@ -86,7 +88,7 @@ public class origin {
 	    } catch (Exception e) {
 	          e.printStackTrace();
 	    } finally {
-	         driver.quit();
+	        //driver.quit();
 	   }
 		email(methodname, filepath);
 		//driver.quit();
@@ -105,6 +107,8 @@ public class origin {
 			System.out.println("++++++Email Problem++++++++");
 			
 			}	
-	
+
 		}
-	}
+	*/
+}
+

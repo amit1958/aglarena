@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.AglArena.PR_Verification">
+      <class name="com.ArenaPages.VerifySubscribeState">
         <methods>
+          <include name="VerifyStates"/>
           <include name="screenShot"/>
-          <include name="email"/>
-          <include name="Press_Release_Page"/>
           <include name="startUp"/>
         </methods>
-      </class> <!-- com.AglArena.PR_Verification -->
+      </class> <!-- com.ArenaPages.VerifySubscribeState -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

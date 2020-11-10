@@ -43,7 +43,7 @@ public class SendEmail {
 			MultiPartEmail email= new MultiPartEmail();
 			email.setHostName("smtp.gmail.com");
 			email.setSmtpPort(465);
-			email.setAuthenticator(new DefaultAuthenticator("amit.kumar1@adglobal360.com", "Agl@1395"));
+			email.setAuthenticator(new DefaultAuthenticator("amit.kumar1@adglobal360.com", "Adglobal#1395"));
 			email.setSSL(true);
 			email.setFrom("amit.kumar1@adglobal360.com");
 			//email.setSubject("Selenium Testing");
@@ -51,8 +51,8 @@ public class SendEmail {
 			//email.setMsg("Body of the email");
 			email.setMsg(bodyText);
 			email.addTo("amit.kumar1@adglobal360.com");
-			email.addTo("vishnu.dass@adglobal360.com");
-			email.addTo("megha.sharma@adglobal360.com");
+//			email.addTo("vishnu.dass@adglobal360.com");
+//			email.addTo("megha.sharma@adglobal360.com");
 //			email.addCc("parkash.gupta@adglobal360.com");
 //			email.addBcc("amit.sharma.eng14805@gmail.com");
 			email.attach(emailAt);

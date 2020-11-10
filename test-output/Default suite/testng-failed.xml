@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.AglArena.PR_Verification">
+      <class name="com.ArenaPages.MSGALeadSubmittion">
         <methods>
-          <include name="screenShot"/>
-          <include name="email"/>
-          <include name="Press_Release_Page"/>
+          <include name="VerifyLeadSubmit"/>
           <include name="startUp"/>
         </methods>
-      </class> <!-- com.AglArena.PR_Verification -->
+      </class> <!-- com.ArenaPages.MSGALeadSubmittion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

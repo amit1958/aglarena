@@ -9,7 +9,7 @@ public class ServicesTest extends origin{
 	ServicesElements service= new ServicesElements();
 	@Test
 	public void ServiceTest() throws InterruptedException{
-		service.bookService();
+		service.serviceAppointment();
 	}
 
 }

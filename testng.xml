@@ -4,8 +4,11 @@
   <test thread-count="1" name="Test">
     <classes>
       <!-- class name="com.AglArena.GetPriceListTestforAllCars" -->
-      <class name="com.AglArena.PR_Verification"/>
-      <class name="com.AglArena.MSGA_Verification"/>
+    <!--  <class name="com.AglArena.PR_Verification"/>  -->
+       <class name="com.ArenaPages.VerifySubscribeState"/>
+    <!--   <class name="com.AglArena.VerifySubscribeLeadSubmission"/> -->
+       
+     <!--   <class name="com.AglArena.MSGA_Verification"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
